@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A61F4CC91DB8187A00D8C546 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F4CC81DB8187A00D8C546 /* main.cpp */; };
+		A61F4CD11DB8206500D8C546 /* doubleCapacity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F4CCF1DB8206500D8C546 /* doubleCapacity.cpp */; };
+		A61F4CD41DB824BB00D8C546 /* SmallestElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F4CD21DB824BB00D8C546 /* SmallestElement.cpp */; };
+		A61F4CD71DB82C0900D8C546 /* Rectangle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F4CD51DB82C0900D8C546 /* Rectangle2D.cpp */; };
+		A61F4CDA1DB82E2400D8C546 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F4CD81DB82E2400D8C546 /* Course.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		A61F4CC51DB8187A00D8C546 /* HW4-CS172 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HW4-CS172"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61F4CC81DB8187A00D8C546 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A61F4CCF1DB8206500D8C546 /* doubleCapacity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = doubleCapacity.cpp; sourceTree = "<group>"; };
+		A61F4CD01DB8206500D8C546 /* doubleCapacity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = doubleCapacity.hpp; sourceTree = "<group>"; };
+		A61F4CD21DB824BB00D8C546 /* SmallestElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmallestElement.cpp; sourceTree = "<group>"; };
+		A61F4CD31DB824BB00D8C546 /* SmallestElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SmallestElement.hpp; sourceTree = "<group>"; };
+		A61F4CD51DB82C0900D8C546 /* Rectangle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle2D.cpp; sourceTree = "<group>"; };
+		A61F4CD61DB82C0900D8C546 /* Rectangle2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rectangle2D.hpp; sourceTree = "<group>"; };
+		A61F4CD81DB82E2400D8C546 /* Course.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
+		A61F4CD91DB82E2400D8C546 /* Course.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Course.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				A61F4CC81DB8187A00D8C546 /* main.cpp */,
+				A61F4CCF1DB8206500D8C546 /* doubleCapacity.cpp */,
+				A61F4CD01DB8206500D8C546 /* doubleCapacity.hpp */,
+				A61F4CD21DB824BB00D8C546 /* SmallestElement.cpp */,
+				A61F4CD31DB824BB00D8C546 /* SmallestElement.hpp */,
+				A61F4CD51DB82C0900D8C546 /* Rectangle2D.cpp */,
+				A61F4CD61DB82C0900D8C546 /* Rectangle2D.hpp */,
+				A61F4CD81DB82E2400D8C546 /* Course.cpp */,
+				A61F4CD91DB82E2400D8C546 /* Course.hpp */,
 			);
 			path = "HW4-CS172";
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61F4CD41DB824BB00D8C546 /* SmallestElement.cpp in Sources */,
+				A61F4CD11DB8206500D8C546 /* doubleCapacity.cpp in Sources */,
+				A61F4CDA1DB82E2400D8C546 /* Course.cpp in Sources */,
 				A61F4CC91DB8187A00D8C546 /* main.cpp in Sources */,
+				A61F4CD71DB82C0900D8C546 /* Rectangle2D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
