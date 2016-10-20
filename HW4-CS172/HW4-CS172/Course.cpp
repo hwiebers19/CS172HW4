@@ -13,7 +13,7 @@
 using namespace std;
 #include "Course.hpp"
 
-    
+/*
 Course:: Course (const string& courseName, int capacity)
 {
     numberOfStudents = 0;
@@ -58,6 +58,6 @@ int Course:: Clear()
     delete addStudent();
 }
 
-
+*/
 
 

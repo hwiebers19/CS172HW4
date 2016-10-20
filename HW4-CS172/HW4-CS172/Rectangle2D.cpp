@@ -7,6 +7,7 @@
 //
 
 #include "Rectangle2D.hpp"
+/*
 Rectangle2D::Rectangle2D()
 {
     
@@ -79,6 +80,6 @@ void Rectangle2D::overlaps(const Rectangle2D &r)const
 }
 
 
-
+*/
 
 
