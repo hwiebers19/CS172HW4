@@ -55,8 +55,11 @@ int main() {
     delete [] list;
     
 //EX04_03 Exercise 11.5
-    int* SmallestElement();
-    cout << "The smallest element is "<< SmallestElement()<<endl;
+    int Array[]={1,2,4,5,10,100,2,-22};
+    int smallest = smallestElement(Array,8);
+    cout << "The smallest element is "<< smallest <<endl;
+    //int* SmallestElement();
+   
     
 //EX04_04 Exercise 11.9
     /*Rectangle2D r1,r2, r3;
@@ -75,6 +78,20 @@ int main() {
     
     
 //EX04_05 Exercise 11.13
+    Course c1("CS172",5);
+    
+    c1.addStudent("petter");
+    c1.addStudent("Brian");
+    c1.addStudent("anne");
+    
+    cout << "Number of students in course 1: "<<c1.getNumberOfStudents()<<endl;
+    string *students =c1.getStudents();
+    
+    for(int i=0; i <c1.getNumberOfStudents();i++)
+    {
+        cout << students[i]<<" ";
+    }
+    cout << " "<<endl;
     
     
     

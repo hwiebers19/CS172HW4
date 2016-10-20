@@ -7,79 +7,74 @@
 //
 
 #include "Rectangle2D.hpp"
-/*
+
 Rectangle2D::Rectangle2D()
 {
     
 }
-double Rectangle2D::x
-{
-    return x;
-}
-double Rectangle2D::y
-{
-  return y;
-}
 
-int Rectangle2D::getx
+int Rectangle2D::getx()
 {
    return x;
 }
-int Rectangle2D::gety
+int Rectangle2D::gety()
 {
     return y;
 }
-
-int Rectangle2D::setx
+void Rectangle2D::setx(int x)
 {
-    return x;
+    this->x=x;
 }
-int Rectangle2D::sety
+void Rectangle2D::sety(int y)
 {
-    return y;
+    this->y= y;
 }
 
-double Rectangle2D::width
+double Rectangle2D::getwidth()
 {
     return width;
 }
-double Rectangle2D::height
+double Rectangle2D::getheight()
 {
-    return 0;
+    return height;
 }
-
-double Rectangle2D::getwidth
+void Rectangle2D::setwidth(double width)
 {
-    return 0;
+    this->width=width;
 }
-double Rectangle2D::getheight
+void Rectangle2D::setheight(double height)
 {
-    return 0;
+    this->height= height;
 }
-
 int  Rectangle2D::getArea()const
 {
-    return 0;
+  
+    return width*height;
 }
 int Rectangle2D::getPerimeter()const
 {
-    return 0;
+    return width*2 + height*2;
 }
 
-void Rectangle2D::contains(double x, double y)const
+bool Rectangle2D::contains(double x, double y)const
 {
-    return 0;
+    return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this->height;
+    return false;
 }
-void Rectangle2D::contains(const Rectangle2D &r)const
+bool Rectangle2D::contains(const Rectangle2D &r)const
 {
-    return 0;
+    //not sure how to do this yet. he said use this function, i dont know which one and he said worth more points. I dont understand he had to go
+    //return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this->height;
+    return false;
 }
-void Rectangle2D::overlaps(const Rectangle2D &r)const
+bool Rectangle2D::overlaps(const Rectangle2D &r)const
 {
-    return 0;
+    //not sure how to do this yet. he said use this function, i dont know which one and he said worth more points. I dont understand he had to go
+    //return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this->height;
+    return false;
 }
 
 
-*/
+
 
 

@@ -13,30 +13,36 @@
 
 class Rectangle2D
 {
-public:
+private:
     static double x;
     static double y;
-    
-    static int getx;
-    static int gety;
-    
-    static int setx;
-    static int sety;
     
     static double width;
     static double height;
     
-    static double getwidth;
-    static double getheight;
+public:
+    
+    int getx();
+    int gety();
+    
+    void setx(int y);
+    void sety(int y);
+    
+    
+    double getwidth();
+    double getheight();
+    
+    void setwidth(double width);
+    void setheight(double height);
     
     Rectangle2D();
     
     int getArea()const;
     int getPerimeter()const;
     
-    void contains(double x, double y)const;
-    void contains(const Rectangle2D &r)const;
-    void overlaps(const Rectangle2D &r)const;
+    bool contains(double x, double y)const;
+    bool contains(const Rectangle2D &r)const;
+    bool overlaps(const Rectangle2D &r)const;
     
 };
 

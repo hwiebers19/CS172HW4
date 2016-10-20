@@ -17,7 +17,7 @@ class Course
 private:
     int capacity;
     int courseName;
-    int students;
+    string* students;
     int numberOfStudents;
     
 public:

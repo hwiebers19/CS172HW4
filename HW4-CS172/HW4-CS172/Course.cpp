@@ -55,7 +55,8 @@ int Course::getNumberOfStudents() const
 
 int Course:: Clear()
 {
-    delete addStudent();
+    numberOfStudents=0;
+    return 0;
 }
 
 */

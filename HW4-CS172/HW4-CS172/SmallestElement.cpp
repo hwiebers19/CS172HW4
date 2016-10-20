@@ -10,21 +10,18 @@
 #include <iostream>
 using namespace std;
 
-int* SmallestElement()
+int smallestElement(int* Array, int size)
 {
-    //int element=0;
-    int Array[]= {1, 2, 3, 4, 5, 10, 100, 2, -22};
-    
-    
+
     int smallest = Array[0] ;
-    for (int i=1;  i < sizeof(Array)/sizeof(Array[0]);  ++i )
+    for (int i=1;  i < size; ++i )
     {
         if ( Array[i] < smallest )
         {
             smallest = Array[i] ;
         }
     }
-    cout << smallest << '\n' ;
-    return 0;
+    
+    return smallest;
     
 }

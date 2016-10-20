@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
-int* SmallestElement();
+int smallestElement(int* Array, int size);
+
 
 #endif /* SmallestElement_hpp */
