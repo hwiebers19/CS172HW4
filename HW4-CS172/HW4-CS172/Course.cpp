@@ -13,7 +13,7 @@
 using namespace std;
 #include "Course.hpp"
 
-/*
+
 Course:: Course (const string& courseName, int capacity)
 {
     numberOfStudents = 0;
@@ -34,15 +34,34 @@ string Course::getCourseName() const
  
 void Course:: addStudent(const string& name)
 {
-    students[numberOfStudents] =name;
-    numberOfStudents++;
+    if(numberOfStudents != capacity)
+    {
+        students[numberOfStudents] = name;
+        numberOfStudents++;
+    }
+    if(numberOfStudents == capacity)
+    {
+        string *newList = new string[2*capacity];
+        for(int i=0; i < 2*capacity; i++)
+        {
+            newList[i] = students[i];
+        }
+    }
 }
-            
+
 void Course:: dropStudent(const string& name)
 {
-    //left as an exercise
+    string *ptr = students;
+    for(ptr =students; ptr < students+capacity; ptr++)
+    {
+        if(*ptr == name)
+        {
+            *ptr = "";
+        }
+    }
+    numberOfStudents--;
 }
- 
+
 string* Course::getStudents() const
 {
     return students;
@@ -50,7 +69,7 @@ string* Course::getStudents() const
  
 int Course::getNumberOfStudents() const
 {
-    return getNumberOfStudents();
+    return numberOfStudents;
 }
 
 int Course:: Clear()
@@ -59,6 +78,5 @@ int Course:: Clear()
     return 0;
 }
 
-*/
 
 

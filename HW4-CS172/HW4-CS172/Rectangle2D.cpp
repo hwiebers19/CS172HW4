@@ -6,11 +6,14 @@
 //  Copyright © 2016 Heidi Wiebers. All rights reserved.
 //
 
-#include "Rectangle2D.hpp"
-
+//#include "Rectangle2D.hpp"
+/*
 Rectangle2D::Rectangle2D()
 {
-    
+    x=0;
+    y=0;
+    width=1;
+    height=1;
 }
 
 int Rectangle2D::getx()
@@ -75,6 +78,6 @@ bool Rectangle2D::overlaps(const Rectangle2D &r)const
 }
 
 
-
+*/
 
 

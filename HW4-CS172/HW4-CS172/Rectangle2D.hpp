@@ -6,11 +6,11 @@
 //  Copyright © 2016 Heidi Wiebers. All rights reserved.
 //
 
-#ifndef Rectangle2D_hpp
+//#ifndef Rectangle2D_hpp
 #define Rectangle2D_hpp
 
 #include <stdio.h>
-
+/*
 class Rectangle2D
 {
 private:
@@ -45,6 +45,6 @@ public:
     bool overlaps(const Rectangle2D &r)const;
     
 };
-
+/*
 
 #endif /* Rectangle2D_hpp */
