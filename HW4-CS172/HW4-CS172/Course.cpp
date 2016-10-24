@@ -46,20 +46,28 @@ void Course:: addStudent(const string& name)
         {
             newList[i] = students[i];
         }
+        capacity = 2*capacity;
+        delete [] students;
+        students=newList;
+        
     }
 }
 
 void Course:: dropStudent(const string& name)
 {
-    string *ptr = students;
-    for(ptr =students; ptr < students+capacity; ptr++)
+    for(int i=0; i < numberOfStudents; i++)
     {
-        if(*ptr == name)
+        if(students[i]==name)
         {
-            *ptr = "";
+            for(int j=i+1; j<numberOfStudents; j++)
+            {
+                students[j-1]=students[j];
+            }
+            students[numberOfStudents-1]= "";
+            numberOfStudents--;
         }
     }
-    numberOfStudents--;
+    
 }
 
 string* Course::getStudents() const

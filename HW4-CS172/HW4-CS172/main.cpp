@@ -10,7 +10,7 @@
 using namespace std;
 #include "doubleCapacity.hpp"
 #include "SmallestElement.hpp"
-//#include "Rectangle2D.hpp"
+#include "Rectangle2D.hpp"
 #include "Course.hpp"
 
 int main() {
@@ -62,40 +62,38 @@ int main() {
    
     
 //EX04_04 Exercise 11.9
-    /*
-    Rectangle2D r1,r2,r3;
     
-    r1.contains(2,2,5.5,4.9);
-    r2.Rectangle2D (4,5, 10.5, 3.2);
-    r3 (3,5,2.3,5.4)
+    Rectangle2D r1(2,2,5.5,4.9);
+    Rectangle2D r2(4,5, 10.5, 3.2);
+    Rectangle2D r3(3,5,2.3,5.4);
     
     cout << "The area of the first rectangle is " << r1.getArea() << endl;
     cout << "The perimeter of the first rectangle is " << r1.getPerimeter() << endl;
     if(r1.contains(3, 3) == true)
     {
-        cout << "The point (3, 3) is in the first rectangle";
+        cout << "The point (3, 3) is in the first rectangle"<<endl;
     }
     else
     {
-        cout << "The point (3, 3) is not in the first rectangle";
+        cout << "The point (3, 3) is not in the first rectangle"<<endl;
     }
     if(r1.contains(r2) == true)
     {
-        cout << "The 1st rectangle contains the 2nd rectangle";
+        cout << "The 1st rectangle contains the 2nd rectangle"<<endl;
     }
     else
     {
-        cout << "The 1st rectangle doesn't contains the 2nd rectangle";
+        cout << "The 1st rectangle doesn't contains the 2nd rectangle"<<endl;
     }
     if(r1.overlaps(r3) == true)
     {
-        cout << "The 3rd rectangle overlaps with the first rectangle";
+        cout << "The 3rd rectangle overlaps with the first rectangle"<<endl;
     }
     else
     {
-        cout << "The 3rd rectangle doesn't overlap with the first rectangle";
+        cout << "The 3rd rectangle doesn't overlap with the first rectangle"<<endl;
     }
-    */
+    
     
     
 //EX04_05 Exercise 11.13
@@ -110,18 +108,21 @@ int main() {
     
     for(int i=0; i <c1.getNumberOfStudents();i++)
     {
-        cout << students[i]<<" ";
+        cout << students[i]<<", ";
     }
+    
     c1.dropStudent("Peter");
-    /*
     cout << " "<<endl;
     
-    for(int i=0; i < c1.getNumberOfStudents(); i++)
-    {
-        cout << *(c1.getStudents()+i)<<endl;
-    }
-    */
+    cout << "Number of students in course 1: "<<c1.getNumberOfStudents()<<endl;
+    students =c1.getStudents();
     
+    for(int i=0; i <c1.getNumberOfStudents();i++)
+    {
+        cout << students[i]<<", ";
+    }
+    
+    cout <<" "<<endl;
     
     return 0;
 }

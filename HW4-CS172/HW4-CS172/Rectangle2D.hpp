@@ -6,36 +6,37 @@
 //  Copyright © 2016 Heidi Wiebers. All rights reserved.
 //
 
-//#ifndef Rectangle2D_hpp
+#ifndef Rectangle2D_hpp
 #define Rectangle2D_hpp
 
 #include <stdio.h>
-/*
+
 class Rectangle2D
 {
 private:
-    static double x;
-    static double y;
+    double x;
+    double y;
     
-    static double width;
-    static double height;
+    double width;
+    double height;
     
 public:
     
-    int getx();
-    int gety();
+    int getx()const;
+    int gety()const;
     
-    void setx(int y);
+    void setx(int x);
     void sety(int y);
     
     
-    double getwidth();
-    double getheight();
+    double getwidth()const;
+    double getheight()const;
     
     void setwidth(double width);
     void setheight(double height);
     
     Rectangle2D();
+    Rectangle2D(int x, int y, int width, int height);
     
     int getArea()const;
     int getPerimeter()const;
@@ -45,6 +46,6 @@ public:
     bool overlaps(const Rectangle2D &r)const;
     
 };
-/*
+
 
 #endif /* Rectangle2D_hpp */
