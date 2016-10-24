@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+//promises
 int smallestElement(int* Array, int size);
 
 

@@ -14,6 +14,7 @@ using namespace std;
 
 int* doubleCapacity(const int* list, int SIZE)
 {
+    // use the imputed array size and doubles it
     int newsize = SIZE *2;
     int *p = new int[newsize];
     for (int i = 0; i < SIZE; i++)

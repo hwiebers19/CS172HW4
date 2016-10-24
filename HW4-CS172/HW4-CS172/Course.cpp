@@ -13,7 +13,7 @@
 using namespace std;
 #include "Course.hpp"
 
-
+//argument constructor which initalizes number of students and uses pointers
 Course:: Course (const string& courseName, int capacity)
 {
     numberOfStudents = 0;
@@ -21,17 +21,17 @@ Course:: Course (const string& courseName, int capacity)
     this-> capacity = capacity;
     students = new string[capacity];
 }
- 
+// deletes the students array
 Course::~Course()
 {
      delete [] students;
 }
- 
+//returns the course name
 string Course::getCourseName() const
 {
     return courseName;
 }
- 
+// adds a student to the course and checks if the array(course) is set to capacity
 void Course:: addStudent(const string& name)
 {
     if(numberOfStudents != capacity)
@@ -53,6 +53,7 @@ void Course:: addStudent(const string& name)
     }
 }
 
+//checks if a students in the course and then drops the student from the course
 void Course:: dropStudent(const string& name)
 {
     for(int i=0; i < numberOfStudents; i++)
@@ -69,17 +70,17 @@ void Course:: dropStudent(const string& name)
     }
     
 }
-
+//gets the students
 string* Course::getStudents() const
 {
     return students;
 }
- 
+//gets the number if students
 int Course::getNumberOfStudents() const
 {
     return numberOfStudents;
 }
-
+//initalizes number of students
 int Course:: Clear()
 {
     numberOfStudents=0;

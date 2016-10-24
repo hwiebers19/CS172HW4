@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+//creates the Rectangle2D class with the private and public constructors promised
 class Rectangle2D
 {
 private:

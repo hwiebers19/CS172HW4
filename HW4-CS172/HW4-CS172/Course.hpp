@@ -12,6 +12,7 @@
 #include <stdio.h>
 using namespace std;
 
+//course class with the private and public constructors promised
 class Course
 {
 private:

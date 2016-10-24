@@ -10,6 +10,7 @@
 #include <iostream>
 using namespace std;
 
+//finds the smallest value in the array 
 int smallestElement(int* Array, int size)
 {
 
